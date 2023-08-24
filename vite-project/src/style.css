@@ -1,0 +1,86 @@
+body, h1, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(221, 204, 204);
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 24px;
+  color: #000000;
+}
+
+#taskInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 14px;
+  width: 250px;
+}
+
+#addButton {
+  padding: 10px 15px;
+  background-color: #cc00ff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#taskList {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#taskList li {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+#taskList li:hover {
+  background-color: #f9f9f9;
+  border-color: #aaa;
+}
+
+#taskList li span {
+  flex-grow: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.task-done {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Style pour l'icône de corbeille */
+#taskList li i {
+  margin-left: 10px; 
+  font-size: 18px;
+  color: #ff0b03;
+  cursor: pointer;
+}
+
+/* Style pour la coche */
+#taskList li input[type="checkbox"] {
+  margin-right: 10px; 
+  cursor: pointer;
+}
