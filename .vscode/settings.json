@@ -1,0 +1,19 @@
+{
+    "sqltools.connections": [
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "myriamnode.database.windows.net",
+            "port": 1433,
+            "driver": "MSSQL",
+            "name": "MYRIAM",
+            "database": "myriambdd",
+            "username": "myriam",
+            "password": "Sakirdou1&"
+        }
+    ]
+}
